@@ -27,6 +27,13 @@ public class BusinessAccount extends Account {
             // Não esta reconhecendo pq o balance esta como privado
             balance = balance - 10.0;
         }
+
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        super.withdraw(amount);
+        balance = balance - 2.0;
     }
 
 }

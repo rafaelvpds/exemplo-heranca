@@ -24,4 +24,10 @@ public class SavingnsAccount extends Account {
         balance = (balance * interesRate) + balance;
     }
 
+    // posso reemplementar um metodo, isso pode ser util para dar um comportamento
+    // expecifico para uma classe
+    @Override
+    public void withdraw(double amount) {
+        this.balance = this.balance - amount;
+    }
 }
